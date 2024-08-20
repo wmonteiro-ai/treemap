@@ -9,8 +9,6 @@ use Demander\Model;
 
 class Action extends Model
 {   
-    private $values;
-
     public function __construct(string $name)
     {   
         $values = $this->actionFromWeb($name);

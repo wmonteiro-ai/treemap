@@ -16,10 +16,6 @@ $app->get('/', function () {
     ));
 });
 
-$app->get('/saveFrame', function () {
-
-});
-
 $app->config('debug', true);
 
 $app->run();

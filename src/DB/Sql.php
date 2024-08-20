@@ -11,9 +11,9 @@ class Sql
 	public function __construct()
 	{	
 		$this->conn = new \PDO(
-			"mysql:dbname=" . $_ENV['HOSTNAME'] . ";host=" . $_ENV['DBNAME'],
+			"mysql:dbname=" . $_ENV['DBNAME'] . ";host=" . $_ENV['HOSTNAME'],
 			$_ENV['USERNAME'],
-			$_ENV['PASSOWORD']
+			""
 		);
 	}
 
