@@ -1,0 +1,23 @@
+:root {
+    --red-rate: 0;
+    --green-rate: 0;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+}
+
+.frame {
+    align-items: center;
+    justify-content: center;
+    height: var(--largura-elemento);
+    width: var(--largura-elemento);
+    padding: 10px;
+    background-color: rgb(var(--red-rate), var(--green-rate), 0);
+    border: .01rem solid #e6e6e6;
+    color: #FFFFFF;
+    font-weight: 500;
+}
