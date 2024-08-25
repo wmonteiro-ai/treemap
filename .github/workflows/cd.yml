@@ -1,13 +1,10 @@
 - name: Continuous Delivery
   uses: super-linter/super-linter@v7.0.0
             
-
 on: # yamllint disable-line rule:truthy
   push: 
     branches:
       - main
-
-permissions: {}
 
 jobs:
   deliver:
