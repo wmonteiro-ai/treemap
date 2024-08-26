@@ -11,9 +11,11 @@ $app = new Slim();
 $app->get('/', function () {
     $frame = new Frame('');
     $page = new Page();
-    $page->setTemplate('index', array(
-        "frames" => $frame->getFrames(),
-    ));
+    $page->setTemplate('index', 
+        array(
+            "frames" => $frame->getFrames(),
+        )
+    );
 });
 
 $app->config('debug', true);
