@@ -1,9 +1,20 @@
-name: Lint
-on:
-  pull_request:
+name: Improve Commits with AI
+
+on: 
+  push:
+    branches:
+      - main
+
 jobs:
-  lint:
+  opencommit:
+    name: Improve Commit Messages
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: firehed/lint-php-action@v1
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: OpenCommit — improve commits with AI 
+        uses: di-sukharev/opencommit@github-action-v1.0.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
